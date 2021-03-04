@@ -13,10 +13,11 @@
 }
 
 .main-btn{
-    color: white;
+    color: black;
     background-color: goldenrod;
     width: 250px;
     height: 35px;
     border: 1px solid black;
     border-radius: 5px;
+    cursor: pointer;
 }
