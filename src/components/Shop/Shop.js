@@ -10,7 +10,6 @@ const Shop = () => {
   const [products, setProducts] = useState(first10);
   const [cart, setCart] = useState([]);
   const handleAddProduct = (product) => {
-    console.log("Product Added", product);
     const newCart = [...cart, product];
     setCart(newCart);
     // Same Product count on multiple time
@@ -26,6 +25,7 @@ const Shop = () => {
         {products.map((pd) => (
           <Product
             showAddToCart={true}
+            key={pd.key}
             handleAddProduct={handleAddProduct}
             product={pd}
           ></Product>
